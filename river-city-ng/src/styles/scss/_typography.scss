@@ -1,0 +1,19 @@
+﻿.text-primary, .text-primary-hover:hover
+{
+    color: $red-color !important;
+}
+
+
+.blog-card h3 a:hover
+{
+    color: $red-color !important;
+}
+
+.card-body
+{
+    a:hover, a:active
+    {
+        color: $red-color !important;
+        text-decoration: none;
+    }
+}

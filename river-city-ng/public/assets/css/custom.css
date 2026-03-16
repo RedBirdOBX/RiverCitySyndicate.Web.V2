@@ -1,0 +1,37 @@
+.butn.primary {
+  background: #ff0000 !important;
+  color: #fff;
+}
+
+.navbar-header-custom {
+  padding: 0px !important;
+}
+.navbar-header-custom .navbar-brand img {
+  max-height: 150px !important;
+}
+
+.navbar-header-custom {
+  padding: 0px 0 20px 0;
+}
+
+.top-position1 {
+  margin-top: -152px;
+}
+
+.text-primary, .text-primary-hover:hover {
+  color: #ff0000 !important;
+}
+
+.blog-card h3 a:hover {
+  color: #ff0000 !important;
+}
+
+.card-body a:hover, .card-body a:active {
+  color: #ff0000 !important;
+  text-decoration: none;
+}
+
+.footer-social-icons ul li:hover {
+  background: #ff0000;
+  border-color: #ff0000;
+}/*# sourceMappingURL=custom.css.map */

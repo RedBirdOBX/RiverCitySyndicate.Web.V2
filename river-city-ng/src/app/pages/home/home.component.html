@@ -1,0 +1,132 @@
+<!-- title -->
+<section class="bg-img banner-section cover-background full-screen left-overlay-dark top-position1"
+            data-overlay-dark="5"
+            [style.backgroundImage]="'url(' + bannerImage + ')'"
+            [style.minHeight.px]="screenHeight"
+            id="PageTitleSection">
+
+    <div class="container position-absolute top-50 start-50 translate-middle z-index-9">
+
+        <div class="row align-items-center">
+            <div class="col-lg-8 col-xxl-6">
+                <h1 class="display-lg-6 mb-3 mb-lg-4 text-white">
+                    RIVER CITY SYNDICATE
+                </h1>
+                <p class="w-md-95 lead text-white opacity7 d-none d-sm-block">
+                    Dad bods and rock gods can be one and the same.
+                    Fueled by riffs, nostalgia, and just enough ibuprofen, we bring the noise - because earplugs are for the weak.
+                </p>
+                <div class="mt-1-9 text-center">
+                    <a routerLink="shows"
+                        class="butn btn-lg primary white-hover">
+                        <span>Upcoming Shows</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- about -->
+<section class="md">
+    <div class="container">
+        <div class="bg-white box-shadow-primary">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="text-center">
+                        <img src="/assets/imgs/content/home/about-rcs.png" alt="Elle Christine" />
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div>
+                        <div class="p-1-6 p-md-1-9">
+                            <h2 class="mb-3">About River City Syndicate</h2>
+                            <p class="w-95 mb-3">
+                                River City Syndicate is a fun-loving rock band based out of Richmond, Virginia,
+                                made up of middle-aged men who still remember when gas was cheap and rock was loud.
+                                They tear through crowd-pleasing covers of all your favorite hits—mostly from back when
+                                knees didn’t crack—while sneaking in a few original songs for good measure.
+                                Equal parts energy and experience, they’ll get you up and dancing, or at
+                                least enthusiastically nodding along while reminiscing about “the good old days.”
+                                Whether it’s a packed dance floor or a well-earned beer break, these guys know how to bring the party.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- next show -->
+<section id="NextShowSection" class="md">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <div class="row">
+
+                    <div class="section-heading">
+                        <h2>Next Show</h2>
+                    </div>
+
+                    <div class="col-lg-12 mb-1-9">
+                        <article class="card blog-card">
+                            <div class="row g-0">
+                                <div class="col-md-6">
+                                    <div id="next-show-img-container"
+                                            class="card-img bg-img cover-background h-100"
+                                            [ngStyle]="{ 'background-image': nextShow?.image ? nextShow?.image : 'none' }">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card-body">
+                                        <div class="d-block text-muted mb-2">
+                                            <h3>
+                                                <a id="show-date-link">
+                                                    {{ nextShow?.date | date: 'fullDate' }}
+                                                </a>
+                                            </h3>
+                                        </div>
+                                        <h3>
+                                            <a id="show-title-link">
+                                                {{ nextShow?.title }}
+                                            </a>
+                                        </h3>
+                                        <p>
+                                            <span id="show-location">{{ nextShow?.location }}</span><br />
+                                            <span id="show-time">{{ nextShow?.time }}</span>
+                                        </p>
+
+                                        <p id="show-description">{{ nextShow?.description }}</p>
+
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <span *ngIf="nextShow?.url">
+                                                    <a target="_blank" [href]="nextShow?.url">
+                                                        <span class="fa fa-2x fa-globe fa-fw"></span>
+                                                        &nbsp;{{ nextShow?.title }}
+                                                    </a>
+                                                </span>
+                                            </div>
+                                            <div class="col-6">
+                                                <a [href]="nextShow?.mapUrl" target="_blank">
+                                                    <span class="fa fa-2x fa-map-marker"></span>&nbsp;map
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
