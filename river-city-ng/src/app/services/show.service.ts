@@ -16,4 +16,9 @@ export class ShowService
     {
         return this.http.get<Show>(`${this.base}/api/shows/nextshow`);
     }
+
+    getShows(): Observable<Show[]>
+    {
+        return this.http.get<Show[]>(`${this.base}/api/shows`);
+    }
 }
