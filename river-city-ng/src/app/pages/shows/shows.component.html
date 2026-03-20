@@ -1,26 +1,5 @@
-<!-- title -->
-<section class="page-title-section2 bg-img cover-background top-position1"
-            data-overlay-dark="4"
-            [style.backgroundImage]="'url(' + bannerImage + ')'">
-    <div class="container">
+<app-shows-title />
 
-        <div class="row">
-            <div class="col-md-12">
-                <h1>Shows</h1>
-            </div>
-            <div class="col-md-12">
-                <ul class="ps-0">
-                    <li><a routerLink="">Home</a></li>
-                    <li><a routerLink="shows">Shows</a></li>
-                </ul>
-            </div>
-        </div>
-
-    </div>
-</section>
-
-
-<!-- shows -->
 <section>
     <div class="container">
         <div class="row justify-content-center">
@@ -44,7 +23,7 @@
                                         <div class="card-body">
                                             <div class="d-block text-muted mb-2">
                                                 <h3>
-                                                    <a routerLink="show/{{show.id}}">{{show.id}}</a>
+                                                    <a routerLink="show/{{show.id}}">{{ show.date | date: 'fullDate' }}</a>
                                                 </h3>
                                             </div>
                                             <h3><a routerLink="show/{{show.id}}">{{show.title}}</a></h3>

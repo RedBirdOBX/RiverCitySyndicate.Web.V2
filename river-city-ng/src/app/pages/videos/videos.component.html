@@ -1,1 +1,21 @@
-<h2>Videos</h2>
+<app-videos-title />
+
+<section>
+    <div class="container">
+        <div class="row mb-1-9 mb-lg-6 box-hover">
+           <div class="section-heading col-12">
+                <h2>Videos Gallery</h2>
+                <p class="w-md-75 w-lg-55">A collection of the latest videos.</p>
+            </div>
+            <div class="col-12">
+                <div class="row portfolio-gallery">
+                    <div *ngFor="let video of videos; let isEven = even" class="mb-5">
+                        <h4 class="text-primary">{{ video.description }}</h4>
+                        <div class="embed-responsive embed-responsive-16by9" [innerHTML]="getSafeHtml(video.html)">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
