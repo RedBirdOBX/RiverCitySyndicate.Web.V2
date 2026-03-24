@@ -1,33 +1,20 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterLink } from "@angular/router";
-import { ShowService } from '../../services/show.service';
-import { Show } from '../../models/show';
 import { HomeBannerComponent } from "./home.banner.component";
+import { HomeAboutComponent } from './home.about.component';
+import { HomeNextshowComponent } from './home.nextshow.component';
+
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule, RouterLink, HomeBannerComponent],
+  imports: [CommonModule, RouterLink, HomeBannerComponent, HomeAboutComponent, HomeNextshowComponent],
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })
 
-export class HomeComponent implements OnInit{
+export class HomeComponent
+{
 
-    nextShow?: Show;
-
-    constructor(private showSvc: ShowService) {}
-
-    ngOnInit(): void
-    {
-        this.showSvc.getNextShow().subscribe(show => {
-            this.nextShow = show;
-
-            // update show image path
-            if (this.nextShow?.image) {
-                this.nextShow.image = `url('/assets/imgs/content/gigs/${this.nextShow.image}')`;
-            }
-        });
-    }
 }

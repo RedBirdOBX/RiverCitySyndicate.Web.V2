@@ -1,0 +1,66 @@
+<section id="NextShowSection" class="md">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <div class="row">
+
+                    <div class="section-heading">
+                        <h2>Next Show</h2>
+                    </div>
+
+                    <div class="col-lg-12 mb-1-9">
+                        <article class="card blog-card">
+                            <div class="row g-0">
+                                <div class="col-md-6">
+                                    <div id="next-show-img-container"
+                                            class="card-img bg-img cover-background h-100"
+                                            [ngStyle]="{ 'background-image': nextShow?.image ? nextShow?.image : 'none' }">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card-body">
+                                        <div class="d-block text-muted mb-2">
+                                            <h3>
+                                                <a id="show-date-link">
+                                                    {{ nextShow?.date | date: 'fullDate' }}
+                                                </a>
+                                            </h3>
+                                        </div>
+                                        <h3>
+                                            <a id="show-title-link">
+                                                {{ nextShow?.title }}
+                                            </a>
+                                        </h3>
+                                        <p>
+                                            <span id="show-location">{{ nextShow?.location }}</span><br />
+                                            <span id="show-time">{{ nextShow?.time }}</span>
+                                        </p>
+
+                                        <p id="show-description">{{ nextShow?.description }}</p>
+
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <span *ngIf="nextShow?.url">
+                                                    <a target="_blank" [href]="nextShow?.url">
+                                                        <span class="fa fa-2x fa-globe fa-fw"></span>
+                                                        &nbsp;{{ nextShow?.title }}
+                                                    </a>
+                                                </span>
+                                            </div>
+                                            <div class="col-6">
+                                                <a [href]="nextShow?.mapUrl" target="_blank">
+                                                    <span class="fa fa-2x fa-map-marker"></span>&nbsp;map
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
