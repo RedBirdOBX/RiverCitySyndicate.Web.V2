@@ -7,11 +7,14 @@
             </div>
             <div class="col-12">
                 <div class="row portfolio-gallery">
-                    <div *ngFor="let video of videos; let isEven = even" class="mb-5">
-                        <h4 class="text-primary">{{ video.description }}</h4>
-                        <div class="embed-responsive embed-responsive-16by9" [innerHTML]="getSafeHtml(video.html)">
+                    @for (video of videos; track $index)
+                    {
+                        <div class="mb-5">
+                            <h4 class="text-primary">{{ video.description }}</h4>
+                            <div class="embed-responsive embed-responsive-16by9" [innerHTML]="getSafeHtml(video.html)">
+                            </div>
                         </div>
-                    </div>
+                    }
                 </div>
             </div>
         </div>

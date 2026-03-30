@@ -11,7 +11,8 @@ import { ShowService } from '../../services/show.service';
   styleUrl: './home.nextshow.component.scss'
 })
 
-export class HomeNextshowComponent implements OnInit{
+export class HomeNextshowComponent implements OnInit
+{
 
     nextShow?: Show;
 
@@ -28,6 +29,4 @@ export class HomeNextshowComponent implements OnInit{
             }
         });
     }
-
-
 }

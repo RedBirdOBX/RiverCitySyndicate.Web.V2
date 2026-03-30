@@ -10,6 +10,7 @@ import { FooterComponent } from "./partials/footer/footer.component";
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
+
 export class AppComponent {
   title = 'river-city-ng';
 }

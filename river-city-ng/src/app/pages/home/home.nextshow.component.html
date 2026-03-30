@@ -40,12 +40,15 @@
 
                                         <div class="row">
                                             <div class="col-6">
-                                                <span *ngIf="nextShow?.url">
-                                                    <a target="_blank" [href]="nextShow?.url">
-                                                        <span class="fa fa-2x fa-globe fa-fw"></span>
-                                                        &nbsp;{{ nextShow?.title }}
-                                                    </a>
-                                                </span>
+                                                @if (nextShow?.url)
+                                                {
+                                                    <span *ngIf="nextShow?.url">
+                                                        <a target="_blank" [href]="nextShow?.url">
+                                                            <span class="fa fa-2x fa-globe fa-fw"></span>
+                                                            &nbsp;{{ nextShow?.title }}
+                                                        </a>
+                                                    </span>
+                                                }
                                             </div>
                                             <div class="col-6">
                                                 <a [href]="nextShow?.mapUrl" target="_blank">

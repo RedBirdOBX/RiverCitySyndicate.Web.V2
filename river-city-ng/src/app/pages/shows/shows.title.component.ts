@@ -11,5 +11,4 @@ import { RouterLink } from "@angular/router";
 export class ShowsTitleComponent
 {
     bannerImage = '/assets/imgs/page-titles/shows.jpg';
-
 }

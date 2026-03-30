@@ -13,7 +13,6 @@ import { VideoService } from '../../services/video.service';
 
 export class VideosListComponent
 {
-
     videos: Video[] = [];
 
     constructor(private videoSvc: VideoService, private sanitizer: DomSanitizer) {}
@@ -26,5 +25,4 @@ export class VideosListComponent
     getSafeHtml(html: string): SafeHtml {
         return this.sanitizer.bypassSecurityTrustHtml(html);
     }
-
 }

@@ -25,31 +25,31 @@
 
         </div>
 
-        <!-- start portfolio gallery -->
         <div class="portfolio-gallery-isotope text-center row">
 
-            <div *ngFor="let photo of photos"
-                 class="col-lg-4 col-md-6 items web-design mt-3"
-                 [attr.data-src]="getPhotoDataSrc(photo.fileName)"
-                 [attr.data-sub-html]="getPhotoDataSubHtml(photo)">
-                <div class="project-grid">
-                    <div class="project-grid-img">
-                        <a href="javascript:void(0);">
-                            <img alt="..."
-                            [src]="getPhotoPath(photo.fileName)">
-                        </a>
-                    </div>
-                    <div class="project-grid-overlay">
-                        <div class="w-100 px-3">
-                            <h4><a href="javascript:void(0);">{{ photo.heading }}</a></h4>
-                            <p>{{ photo.description }}</p>
+            @for (photo of photos; track $index)
+            {
+                <div class="col-lg-4 col-md-6 items web-design mt-3"
+                        [attr.data-src]="getPhotoDataSrc(photo.fileName)"
+                        [attr.data-sub-html]="getPhotoDataSubHtml(photo)">
+                    <div class="project-grid">
+                        <div class="project-grid-img">
+                            <a href="javascript:void(0);">
+                                <img alt="..."
+                                [src]="getPhotoPath(photo.fileName)">
+                            </a>
+                        </div>
+                        <div class="project-grid-overlay">
+                            <div class="w-100 px-3">
+                                <h4><a href="javascript:void(0);">{{ photo.heading }}</a></h4>
+                                <p>{{ photo.description }}</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            }
 
         </div>
-        <!-- end portfolio gallery -->
 
     </div>
 

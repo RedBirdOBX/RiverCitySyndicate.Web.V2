@@ -1,12 +1,11 @@
 import { Component } from '@angular/core';
-import { RouterLink } from "@angular/router";
 import { CommonModule } from '@angular/common';
 import { ShowsTitleComponent } from './shows.title.component';
 import { ShowsListComponent } from './shows.list.component';
 
 @Component({
   selector: 'app-shows',
-  imports: [CommonModule, RouterLink, ShowsTitleComponent, ShowsListComponent],
+  imports: [CommonModule, ShowsTitleComponent, ShowsListComponent],
   templateUrl: './shows.component.html',
   styleUrl: './shows.component.scss'
 })

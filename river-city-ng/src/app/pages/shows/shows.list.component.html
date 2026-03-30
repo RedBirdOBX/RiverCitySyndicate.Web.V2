@@ -8,7 +8,8 @@
                         <h2>Upcoming Shows</h2>
                     </div>
 
-                    <div *ngFor="let show of shows; let isEven = even">
+                    @for (show of shows; track show.id; let i = $index)
+                    {
                         <div class="col-lg-12 mb-1-9">
                             <article class="card blog-card">
                                 <div class="row g-0">
@@ -17,7 +18,7 @@
                                             style="background-image: url('/assets/imgs/content/gigs/{{show.image}}');">
                                         </div>
                                     </div>
-                                    <div id="show-body" class="col-md-6" [class.bg-light]="isEven">
+                                    <div id="show-body" class="col-md-6" [class.bg-light]="i % 2 === 0">
                                         <div class="card-body">
                                             <div class="d-block text-muted mb-2">
                                                 <h3>
@@ -34,12 +35,15 @@
 
                                             <div class="row">
                                                 <div class="col-6">
-                                                    <span *ngIf="show?.url">
-                                                        <a target="_blank" href="{{show?.url}}">
-                                                            <span class="fa fa-2x fa-globe fa-fw"></span>
-                                                            &nbsp;{{ show?.title }}
-                                                        </a>
-                                                    </span>
+                                                    @if (show?.url)
+                                                    {
+                                                        <span *ngIf="show?.url">
+                                                            <a target="_blank" [href]="show?.url">
+                                                                <span class="fa fa-2x fa-globe fa-fw"></span>
+                                                                &nbsp;{{ show?.title }}
+                                                            </a>
+                                                        </span>
+                                                    }
                                                 </div>
                                                 <div class="col-6">
                                                     <a target="_blank" href="{{show.mapUrl}}">
@@ -53,8 +57,7 @@
                                 </div>
                             </article>
                         </div>
-                    </div>
-
+                    }
                 </div>
             </div>
         </div>

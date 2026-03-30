@@ -7,6 +7,7 @@ import { RouterLink } from "@angular/router";
   templateUrl: './videos.title.component.html',
   styleUrl: './videos.title.component.scss'
 })
+
 export class VideosTitleComponent
 {
     bannerImage = '/assets/imgs/page-titles/videos.jpg';

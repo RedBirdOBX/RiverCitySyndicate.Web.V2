@@ -12,6 +12,7 @@
         01. Preloader
         02. Sticky Header
         03. Scroll To Top
+        04. Parallax
         05. Video
         06. Copy to clipboard
         07. Wow animation - on scroll
@@ -110,6 +111,20 @@
                 scrollTop: 0
             }, 600);
         });
+
+        /*------------------------------------
+            04. Parallax
+        --------------------------------------*/
+
+        // sections background image from data background
+        // var pageSection = $(".parallax,.bg-img");
+        // pageSection.each(function(indx) {
+
+        //     if ($(this).attr("data-background"))
+        //     {
+        //         $(this).css("background-image", "url(" + $(this).data("background") + ")");
+        //     }
+        // });
 
         /*------------------------------------
             05. Video
