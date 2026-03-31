@@ -30,7 +30,7 @@ jobs:
           # For more information regarding Static Web App workflow configurations, please visit: https://aka.ms/swaworkflowconfig
           app_location: "./river-city-ng" # App source code path
           api_location: "" # Api source code path - optional
-          output_location: "dist/habitat" # Built app content directory - optional
+          output_location: "dist/habitat/browser" # Built app content directory - optional
           ###### End of Repository/Build Configurations ######
 
   close_pull_request_job:
