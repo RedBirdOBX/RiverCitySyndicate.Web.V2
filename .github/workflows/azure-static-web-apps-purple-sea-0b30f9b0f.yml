@@ -38,10 +38,10 @@ jobs:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_PURPLE_SEA_0B30F9B0F }}
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           action: "upload"
-          app_location: "./river-city-ng"
+          app_location: "./river-city-ng/dist/habitat/browser"
           api_location: ""
-          app_artifact_location: "dist/habitat/browser"  # ← correct param name
-          skip_app_build: true                           # ← skip Oryx, use our build
+          app_artifact_location: ""
+          skip_app_build: true
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
