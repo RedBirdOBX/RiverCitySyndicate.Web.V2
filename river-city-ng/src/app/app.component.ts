@@ -13,4 +13,8 @@ import { FooterComponent } from "./partials/footer/footer.component";
 
 export class AppComponent {
   title = 'river-city-ng';
+
+  scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
 }
