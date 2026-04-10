@@ -3,6 +3,8 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Show } from '../models/show';
+import { catchError } from 'rxjs/operators';
+import { throwError } from 'rxjs';
 
 @Injectable({ providedIn: 'root' })
 
@@ -14,11 +16,22 @@ export class ShowService
 
     getNextShow(): Observable<Show>
     {
-        return this.http.get<Show>(`${this.base}/api/shows/nextshow`);
+        return this.http.get<Show>(`${this.base}/api/shows/nextshow`).pipe(
+            catchError(error => {
+                console.error('Error fetching next show:', error);
+                return throwError(() => new Error('Failed to load next show. Please try again later.'));
+            })
+        );
     }
 
     getShows(): Observable<Show[]>
     {
-        return this.http.get<Show[]>(`${this.base}/api/shows`);
+        return this.http.get<Show[]>(`${this.base}/api/shows`).pipe(
+            catchError(error => {
+                console.error('Error fetching shows:', error);
+                return throwError(() => new Error('Failed to load shows. Please try again later.'));
+            })
+        );
     }
+
 }

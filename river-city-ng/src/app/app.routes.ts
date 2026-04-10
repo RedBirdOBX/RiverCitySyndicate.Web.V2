@@ -1,13 +1,20 @@
 import { Routes } from '@angular/router';
 import { HomeComponent } from './pages/home/home.component';
-import { ShowsComponent } from './pages/shows/shows.component';
-import { PhotosComponent } from './pages/photos/photos.component';
-import { VideosComponent } from './pages/videos/videos.component';
 
 export const routes: Routes = [
-  { path: '', component: HomeComponent },
-  { path: 'shows', component: ShowsComponent },
-  { path: 'photos', component: PhotosComponent },
-  { path: 'videos', component: VideosComponent }
+    {
+        path: '', component: HomeComponent
+    },
+    {
+        path: 'shows',
+        loadComponent: () => import('./pages/shows/shows.component').then(m => m.ShowsComponent)
+    },
+    {
+        path: 'photos',
+        loadComponent: () => import('./pages/photos/photos.component').then(m => m.PhotosComponent)
+    },
+    {
+        path: 'videos',
+        loadComponent: () => import('./pages/videos/videos.component').then(m => m.VideosComponent)
+    }
 ];
-

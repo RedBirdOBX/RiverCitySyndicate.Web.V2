@@ -14,11 +14,15 @@ import { Show } from '../../models/show';
 export class ShowsListComponent  implements OnInit
 {
     shows: Show[] = [];
+    errorMessage: string = '';
 
     constructor(private showSvc: ShowService) {}
 
     ngOnInit(): void
     {
-        this.showSvc.getShows().subscribe(shows => this.shows = shows);
+        this.showSvc.getShows().subscribe({
+            next: shows => this.shows = shows,
+            error: error => this.errorMessage = error.message
+        });
     }
 }
