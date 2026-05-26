@@ -16,17 +16,17 @@ export class LinksListComponent {
       colorClass: 'link-venmo',
       buttonText: 'Buy Us a Drink'
     },
-  {
+    {
       name: 'YouTube',
       description: 'Watch live performances, music videos, and behind-the-scenes content on our channel.',
       url: 'https://www.youtube.com/@rivercitysyndicate',
       icon: 'fa-brands fa-youtube',
       colorClass: 'link-youtube',
-      buttonText: 'Subscribe'
+      buttonText: 'See Videos'
     },    {
       name: 'Facebook',
       description: 'Follow us on Facebook for show announcements, band updates, and community fun.',
-      url: 'https://www.facebook.com/rivercitysyndicate',
+      url: 'https://www.facebook.com/rivercitysyndicateva',
       icon: 'fa-brands fa-facebook',
       colorClass: 'link-facebook',
       buttonText: 'Follow Us'
