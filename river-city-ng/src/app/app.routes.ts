@@ -16,5 +16,9 @@ export const routes: Routes = [
     {
         path: 'videos',
         loadComponent: () => import('./pages/videos/videos.component').then(m => m.VideosComponent)
-    }
+    },
+    {
+        path: 'links',
+        loadComponent: () => import('./pages/links/links.component').then(m => m.LinksComponent)
+    },
 ];

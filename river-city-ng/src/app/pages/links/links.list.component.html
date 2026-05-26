@@ -1,0 +1,31 @@
+<section class="py-5 py-lg-7">
+    <div class="container">
+
+        <div class="row justify-content-center mb-5">
+            <div class="col-lg-8 text-center">
+                <div class="section-heading">
+                    <h2>Find Us Online</h2>
+                    <p class="text-muted mt-3">Connect with River City Syndicate on social media and show your support.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center g-4">
+            @for (link of links; track link.name) {
+                <div class="col-sm-10 col-md-6 col-lg-4">
+                    <div class="social-card {{ link.colorClass }}">
+                        <div class="social-card-icon">
+                            <i class="{{ link.icon }} fa-5x"></i>
+                        </div>
+                        <h3>{{ link.name }}</h3>
+                        <p>{{ link.description }}</p>
+                        <a [href]="link.url" target="_blank" rel="noopener noreferrer" class="btn social-btn">
+                            {{ link.buttonText }}
+                        </a>
+                    </div>
+                </div>
+            }
+        </div>
+
+    </div>
+</section>
