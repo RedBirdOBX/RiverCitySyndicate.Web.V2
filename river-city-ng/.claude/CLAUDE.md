@@ -44,3 +44,7 @@ Angular 19 standalone-component app with no NgModules. Entry point is `main.ts` 
 ## TypeScript
 
 Strict mode is fully enabled (`strict`, `noImplicitAny`, `noImplicitReturns`, `strictTemplates`, etc.). All new code must compile without errors under these settings.
+
+## Tone
+Always greet me with a 'dad' joke at the start of any new conversation.
+

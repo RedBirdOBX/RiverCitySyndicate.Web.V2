@@ -1,17 +1,29 @@
 <section>
     <div class="container">
-        <div class="row mb-1-9 mb-lg-6 box-hover">
-           <div class="section-heading col-12">
+        <div class="row mb-1-9 mb-lg-6">
+            <div class="section-heading col-12">
                 <h2>Videos Gallery</h2>
                 <p class="w-md-75 w-lg-55">A collection of the latest videos.</p>
             </div>
             <div class="col-12">
-                <div class="row portfolio-gallery">
-                    @for (video of videos; track $index)
-                    {
-                        <div class="mb-5">
-                            <h4 class="text-primary">{{ video.description }}</h4>
-                            <div class="embed-responsive embed-responsive-16by9" [innerHTML]="getSafeHtml(video.html)">
+                <div class="row g-4">
+                    @for (video of videos; track video.id) {
+                        <div class="col-12 col-sm-6 col-lg-4">
+                            <div class="video-card"
+                                 data-bs-toggle="modal"
+                                 data-bs-target="#videoModal"
+                                 (click)="selectVideo(video)"
+                                 role="button"
+                                 tabindex="0">
+                                <div class="thumbnail-wrapper">
+                                    <img [src]="thumbnailUrl(video.html)"
+                                         [alt]="video.description"
+                                         class="img-fluid w-100" />
+                                    <div class="play-overlay">
+                                        <span class="play-icon">&#9654;</span>
+                                    </div>
+                                </div>
+                                <p class="video-title mt-2 mb-0">{{ video.description }}</p>
                             </div>
                         </div>
                     }
@@ -20,3 +32,24 @@
         </div>
     </div>
 </section>
+
+<div class="modal fade" id="videoModal" tabindex="-1" #videoModal>
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content bg-dark">
+            <div class="modal-header border-0 pb-1">
+                <h5 class="modal-title text-white">{{ selectedVideoTitle }}</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body p-0">
+                @if (selectedVideoUrl) {
+                    <div class="ratio ratio-16x9">
+                        <iframe [src]="selectedVideoUrl"
+                                allowfullscreen
+                                allow="autoplay; encrypted-media; picture-in-picture">
+                        </iframe>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>
