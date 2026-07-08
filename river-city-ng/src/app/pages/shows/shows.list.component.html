@@ -30,10 +30,10 @@
                                         <div class="card-body">
                                             <div class="d-block text-muted mb-2">
                                                 <h3>
-                                                    <a routerLink="show/{{show.id}}">{{ show.date | date: 'fullDate' }}</a>
+                                                    <a [routerLink]="['/shows', show.id]">{{ show.date | date: 'fullDate' }}</a>
                                                 </h3>
                                             </div>
-                                            <h3><a routerLink="show/{{show.id}}">{{show.title}}</a></h3>
+                                            <h3><a [routerLink]="['/shows', show.id]">{{show.title}}</a></h3>
                                             <p>
                                                 {{show.location}}<br />
                                                 {{show.time}}

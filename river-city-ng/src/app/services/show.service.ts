@@ -34,4 +34,14 @@ export class ShowService
         );
     }
 
+    getShowById(id: number): Observable<Show>
+    {
+        return this.http.get<Show>(`${this.base}/api/shows/${id}`).pipe(
+            catchError(error => {
+                console.error('Error fetching show:', error);
+                return throwError(() => new Error('Failed to load show. Please try again later.'));
+            })
+        );
+    }
+
 }

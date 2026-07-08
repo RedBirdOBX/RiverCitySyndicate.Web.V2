@@ -1,0 +1,58 @@
+<app-shows-title />
+
+<div *ngIf="errorMessage" class="alert alert-danger">
+    {{ errorMessage }}
+</div>
+
+<div *ngIf="!errorMessage && !show">
+    Loading show...
+</div>
+
+<section *ngIf="show">
+    <div class="container">
+
+        <div class="row mb-4">
+            <div class="col-12">
+                <a [routerLink]="['/shows']" class="btn btn-outline-secondary btn-sm">
+                    &larr; Back to Shows
+                </a>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <img
+                    src="/assets/imgs/content/gigs/{{show.image}}"
+                    alt="{{ show.title }}"
+                    class="img-fluid rounded shadow" />
+            </div>
+
+            <div class="col-md-6">
+                <h1 class="show-title">{{ show.title }}</h1>
+                <p class="show-date text-muted">{{ show.date | date: 'fullDate' }}</p>
+                <p class="show-time text-muted">{{ show.time }}</p>
+
+                <hr />
+
+                <p class="show-location">
+                    <span class="fa fa-map-marker fa-fw me-1"></span>
+                    {{ show.location }}
+                </p>
+
+                <p *ngIf="show.description" class="show-description mt-3">
+                    {{ show.description }}
+                </p>
+
+                <div class="mt-4 d-flex gap-3">
+                    <a *ngIf="show.url" [href]="show.url" target="_blank" class="btn btn-primary">
+                        <span class="fa fa-globe fa-fw me-1"></span> Event Info
+                    </a>
+                    <a *ngIf="show.mapUrl" [href]="show.mapUrl" target="_blank" class="btn btn-outline-primary">
+                        <span class="fa fa-map-marker fa-fw me-1"></span> Map
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
