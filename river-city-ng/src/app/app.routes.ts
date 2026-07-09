@@ -28,5 +28,9 @@ export const routes: Routes = [
     {
         path: 'songs',
         loadComponent: () => import('./pages/songs/songs.component').then(m => m.SongsComponent)
+    },
+    {
+        path: 'style-guide',
+        loadComponent: () => import('./pages/style-guide/style-guide.component').then(m => m.StyleGuideComponent)
     }
 ];

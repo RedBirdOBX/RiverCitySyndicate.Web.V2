@@ -11,14 +11,6 @@
 <section *ngIf="show">
     <div class="container">
 
-        <div class="row mb-4">
-            <div class="col-12">
-                <a [routerLink]="['/shows']" class="btn btn-outline-secondary btn-sm">
-                    &larr; Back to Shows
-                </a>
-            </div>
-        </div>
-
         <div class="row">
             <div class="col-md-6 mb-4">
                 <img
@@ -44,12 +36,16 @@
                 </p>
 
                 <div class="mt-4 d-flex gap-3">
+                    <a [routerLink]="['/shows']" class="btn btn-primary">
+                        <span class="fa-solid fa-list"></span> Back to Shows
+                    </a>
                     <a *ngIf="show.url" [href]="show.url" target="_blank" class="btn btn-primary">
                         <span class="fa fa-globe fa-fw me-1"></span> Event Info
                     </a>
-                    <a *ngIf="show.mapUrl" [href]="show.mapUrl" target="_blank" class="btn btn-outline-primary">
+                    <a *ngIf="show.mapUrl" [href]="show.mapUrl" target="_blank" class="btn btn-primary">
                         <span class="fa fa-map-marker fa-fw me-1"></span> Map
                     </a>
+
                 </div>
             </div>
         </div>

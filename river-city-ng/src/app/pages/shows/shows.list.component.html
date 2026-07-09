@@ -22,9 +22,11 @@
                             <article class="card blog-card">
                                 <div class="row g-0">
                                     <div class="col-md-6">
-                                        <div class="card-img bg-img cover-background h-100"
-                                            style="background-image: url('/assets/imgs/content/gigs/{{show.image}}');">
-                                        </div>
+                                        <a [routerLink]="['/shows', show.id]">
+                                            <div class="card-img bg-img cover-background h-100"
+                                                style="background-image: url('/assets/imgs/content/gigs/{{show.image}}');">
+                                            </div>
+                                        </a>
                                     </div>
                                     <div id="show-body" class="col-md-6" [class.bg-light]="i % 2 === 0">
                                         <div class="card-body">

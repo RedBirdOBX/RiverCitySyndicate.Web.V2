@@ -1,0 +1,258 @@
+<app-style-guide-title />
+
+<div class="container py-5 style-guide">
+
+  <p class="lead">Reference page for Bootstrap 5 UI elements used throughout the site. Not indexed by search engines.</p>
+
+  <!-- Typography -->
+  <div class="mb-5">
+    <h2 class="border-bottom pb-2">Typography</h2>
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+    <p class="lead">This is a lead paragraph, used to draw attention to introductory text.</p>
+    <p>This is a normal paragraph with <strong>bold</strong>, <em>italic</em>, <mark>marked</mark> and <a href="#">linked</a> text.</p>
+    <p><small class="text-muted">This is small, muted text.</small></p>
+    <blockquote class="blockquote">
+      <p>A well-known quote, contained in a blockquote element.</p>
+      <footer class="blockquote-footer">Someone famous</footer>
+    </blockquote>
+  </div>
+
+  <!-- Buttons -->
+  <div class="mb-5">
+    <h2 class="border-bottom pb-2">Buttons</h2>
+
+    <h5>Solid</h5>
+    <div class="d-flex flex-wrap gap-2 mb-3">
+      <button *ngFor="let variant of contextualVariants" type="button" class="btn btn-{{variant}}">{{variant}}</button>
+    </div>
+
+    <h5>Outline</h5>
+    <div class="d-flex flex-wrap gap-2 mb-3">
+      <button *ngFor="let variant of contextualVariants" type="button" class="btn btn-outline-{{variant}}">{{variant}}</button>
+    </div>
+
+    <h5>Sizes</h5>
+    <div class="d-flex flex-wrap align-items-center gap-2 mb-3">
+      <button type="button" class="btn btn-primary btn-lg">Large</button>
+      <button type="button" class="btn btn-primary">Medium (default)</button>
+      <button type="button" class="btn btn-primary btn-sm">Small</button>
+    </div>
+
+    <h5>States</h5>
+    <div class="d-flex flex-wrap gap-2">
+      <button type="button" class="btn btn-primary" disabled>Disabled</button>
+      <button type="button" class="btn btn-primary active">Active</button>
+    </div>
+  </div>
+
+  <!-- Alerts -->
+  <div class="mb-5">
+    <h2 class="border-bottom pb-2">Alerts</h2>
+    <div *ngFor="let variant of contextualVariants" class="alert alert-{{variant}}" role="alert">
+      This is a {{variant}} alert.
+    </div>
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+      Dismissible alert &mdash; click the close button.
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+  </div>
+
+  <!-- Badges -->
+  <div class="mb-5">
+    <h2 class="border-bottom pb-2">Badges</h2>
+    <div class="d-flex flex-wrap gap-2">
+      <span *ngFor="let variant of contextualVariants" class="badge bg-{{variant}}">{{variant}}</span>
+    </div>
+    <p class="mt-3">Heading with badge <span class="badge bg-secondary">New</span></p>
+  </div>
+
+  <!-- Cards -->
+  <div class="mb-5">
+    <h2 class="border-bottom pb-2">Cards</h2>
+    <div class="row row-cols-1 row-cols-md-3 g-3">
+      <div class="col">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+            <p class="card-text">Some quick example text for the card body.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card text-bg-primary">
+          <div class="card-body">
+            <h5 class="card-title">Themed card</h5>
+            <p class="card-text">Uses <code>text-bg-primary</code> for background and text color.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <div class="card-header">Card header</div>
+          <div class="card-body">
+            <p class="card-text">Card with a header and footer.</p>
+          </div>
+          <div class="card-footer text-muted">Card footer</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Forms -->
+  <div class="mb-5">
+    <h2 class="border-bottom pb-2">Forms</h2>
+    <form class="row g-3" novalidate>
+      <div class="col-md-6">
+        <label for="sgTextInput" class="form-label">Text input</label>
+        <input type="text" class="form-control" id="sgTextInput" placeholder="Placeholder text">
+      </div>
+      <div class="col-md-6">
+        <label for="sgSelect" class="form-label">Select</label>
+        <select id="sgSelect" class="form-select">
+          <option selected>Choose...</option>
+          <option value="1">One</option>
+          <option value="2">Two</option>
+        </select>
+      </div>
+      <div class="col-md-6">
+        <label for="sgValid" class="form-label">Valid input</label>
+        <input type="text" class="form-control is-valid" id="sgValid" value="Looks good">
+        <div class="valid-feedback">Looks good!</div>
+      </div>
+      <div class="col-md-6">
+        <label for="sgInvalid" class="form-label">Invalid input</label>
+        <input type="text" class="form-control is-invalid" id="sgInvalid" value="Needs fixing">
+        <div class="invalid-feedback">Please provide a valid value.</div>
+      </div>
+      <div class="col-12">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="sgCheck">
+          <label class="form-check-label" for="sgCheck">Checkbox</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="sgRadio" id="sgRadio1" checked>
+          <label class="form-check-label" for="sgRadio1">Radio one</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="sgRadio" id="sgRadio2">
+          <label class="form-check-label" for="sgRadio2">Radio two</label>
+        </div>
+        <div class="form-check form-switch">
+          <input class="form-check-input" type="checkbox" id="sgSwitch">
+          <label class="form-check-label" for="sgSwitch">Switch</label>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <!-- Tables -->
+  <div class="mb-5">
+    <h2 class="border-bottom pb-2">Tables</h2>
+    <table class="table table-striped table-hover align-middle">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Name</th>
+          <th scope="col">Role</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Row one</td>
+          <td><span class="badge bg-success">Active</span></td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>Row two</td>
+          <td><span class="badge bg-secondary">Inactive</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Lists -->
+  <div class="mb-5">
+    <h2 class="border-bottom pb-2">List Groups</h2>
+    <ul class="list-group" style="max-width: 24rem;">
+      <li class="list-group-item">A basic list item</li>
+      <li class="list-group-item active">An active list item</li>
+      <li class="list-group-item disabled">A disabled list item</li>
+      <li class="list-group-item d-flex justify-content-between align-items-center">
+        With a badge
+        <span class="badge bg-primary rounded-pill">14</span>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Navs / Tabs -->
+  <div class="mb-5">
+    <h2 class="border-bottom pb-2">Navs &amp; Tabs</h2>
+    <ul class="nav nav-tabs mb-3">
+      <li class="nav-item">
+        <a class="nav-link active" href="#">Active</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+      </li>
+    </ul>
+    <ul class="nav nav-pills">
+      <li class="nav-item">
+        <a class="nav-link active" href="#">Active pill</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Pill</a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Progress -->
+  <div class="mb-5">
+    <h2 class="border-bottom pb-2">Progress</h2>
+    <div *ngFor="let variant of contextualVariants" class="progress mb-2" role="progressbar">
+      <div class="progress-bar bg-{{variant}}" style="width: 60%">{{variant}}</div>
+    </div>
+  </div>
+
+  <!-- Spinners -->
+  <div class="mb-5">
+    <h2 class="border-bottom pb-2">Spinners</h2>
+    <div class="d-flex flex-wrap gap-3 align-items-center">
+      <div class="spinner-border text-primary" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+      <div class="spinner-grow text-secondary" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Pagination -->
+  <div class="mb-5">
+    <h2 class="border-bottom pb-2">Pagination</h2>
+    <nav aria-label="Style guide pagination example">
+      <ul class="pagination">
+        <li class="page-item disabled">
+          <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+        </li>
+        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item">
+          <a class="page-link" href="#">Next</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+</div>
