@@ -1,12 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { RouterLink } from '@angular/router';
 import { Show } from '../../models/show';
 import { ShowService } from '../../services/show.service';
 
 @Component({
   selector: 'app-home-nextshow',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, RouterLink],
   templateUrl: './home.nextshow.component.html',
   styleUrl: './home.nextshow.component.scss'
 })

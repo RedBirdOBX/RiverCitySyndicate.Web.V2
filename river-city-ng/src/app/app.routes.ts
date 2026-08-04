@@ -10,7 +10,7 @@ export const routes: Routes = [
         loadComponent: () => import('./pages/shows/shows.component').then(m => m.ShowsComponent)
     },
     {
-        path: 'shows/:id',
+        path: 'shows/:slug',
         loadComponent: () => import('./pages/shows/shows.detail.component').then(m => m.ShowsDetailComponent)
     },
     {

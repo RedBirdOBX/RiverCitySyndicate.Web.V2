@@ -1,4 +1,4 @@
-<app-shows-title />
+<app-shows-detail-title [showTitle]="show?.title ?? null" />
 
 <div *ngIf="errorMessage" class="alert alert-danger">
     {{ errorMessage }}

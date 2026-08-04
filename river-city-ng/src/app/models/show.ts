@@ -1,5 +1,6 @@
 export interface Show {
   id: number;
+  slug: string;
   title: string;
   location: string;
   date: string;      // or Date, with a mapper

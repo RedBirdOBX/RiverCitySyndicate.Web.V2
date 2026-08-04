@@ -12,22 +12,24 @@
                         <article class="card blog-card">
                             <div class="row g-0">
                                 <div class="col-md-6">
-                                    <div id="next-show-img-container"
-                                            class="card-img bg-img cover-background h-100"
-                                            [ngStyle]="{ 'background-image': nextShow?.image ? nextShow?.image : 'none' }">
-                                    </div>
+                                    <a [routerLink]="nextShow ? ['/shows', nextShow.slug] : null">
+                                        <div id="next-show-img-container"
+                                                class="card-img bg-img cover-background h-100"
+                                                [ngStyle]="{ 'background-image': nextShow?.image ? nextShow?.image : 'none' }">
+                                        </div>
+                                    </a>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="card-body">
                                         <div class="d-block text-muted mb-2">
                                             <h3>
-                                                <a id="show-date-link">
+                                                <a id="show-date-link" [routerLink]="nextShow ? ['/shows', nextShow.slug] : null">
                                                     {{ nextShow?.date | date: 'fullDate' }}
                                                 </a>
                                             </h3>
                                         </div>
                                         <h3>
-                                            <a id="show-title-link">
+                                            <a id="show-title-link" [routerLink]="nextShow ? ['/shows', nextShow.slug] : null">
                                                 {{ nextShow?.title }}
                                             </a>
                                         </h3>
