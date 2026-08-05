@@ -1,0 +1,7 @@
+[      45ms] [LOG] S.fn.init @ http://localhost:4200/assets/js/main.js:209
+[      69ms] [LOG] Angular is running in development mode. @ http://localhost:4200/@fs/C:/Data/River%20City%20Syndicate/GitHub/RiverCitySyndicate.Web.V2/RiverCitySyndicate.Web.V2/river-city-ng/.angular/cache/19.2.22/river-city-ng/vite/deps/chunk-Z4ZRCVQK.js?v=4b5be752:15065
+[  109142ms] [LOG] [vite] server connection lost. Polling for restart... @ http://localhost:4200/@vite/client:957
+[  111496ms] [ERROR] WebSocket connection to 'ws://localhost:4200/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4200/@vite/client:1028
+[  114865ms] [ERROR] WebSocket connection to 'ws://localhost:4200/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4200/@vite/client:1028
+[  118221ms] [ERROR] WebSocket connection to 'ws://localhost:4200/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4200/@vite/client:1028
+[  121554ms] [ERROR] WebSocket connection to 'ws://localhost:4200/' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:4200/@vite/client:1028

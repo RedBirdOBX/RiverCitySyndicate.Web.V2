@@ -1,0 +1,178 @@
+- generic [ref=f1e3]:
+  - banner [ref=f1e5]:
+    - navigation [ref=f1e11]:
+      - link [ref=f1e13] [cursor=pointer]:
+        - /url: /
+        - img "River City Syndicate - Premiere good-time band from Richmond, Virginia" [ref=f1e14]
+      - list [ref=f1e15]:
+        - listitem [ref=f1e16]:
+          - link "Home" [ref=f1e17] [cursor=pointer]:
+            - /url: /
+        - listitem [ref=f1e18]:
+          - link "Shows" [ref=f1e19] [cursor=pointer]:
+            - /url: /shows
+        - listitem [ref=f1e20]:
+          - link "Photos" [ref=f1e21] [cursor=pointer]:
+            - /url: /photos
+        - listitem [ref=f1e22]:
+          - link "Videos" [ref=f1e23] [cursor=pointer]:
+            - /url: /videos
+        - listitem [ref=f1e24]:
+          - link "Links" [ref=f1e25] [cursor=pointer]:
+            - /url: /links
+  - generic [ref=f1e128]:
+    - generic [ref=f1e130]:
+      - text: ">"
+      - generic [ref=f1e132]:
+        - heading "Photos" [level=1] [ref=f1e134]
+        - list [ref=f1e136]:
+          - listitem [ref=f1e137]:
+            - link "Home" [ref=f1e138] [cursor=pointer]:
+              - /url: /
+            - text: 
+          - listitem [ref=f1e139]:
+            - link "Photos" [ref=f1e140] [cursor=pointer]:
+              - /url: /photos
+    - generic [ref=f1e141]:
+      - generic [ref=f1e143]:
+        - generic [ref=f1e144]:
+          - heading "Our Latest Photos" [level=2] [ref=f1e145]
+          - paragraph [ref=f1e146]: Welcome to the official photo gallery for River City Syndicate, a band that proves rock ‘n’ roll doesn’t come with an expiration date—just slightly longer warm-ups and more sensible footwear. These middle-aged maestros may ice their knees after the show, but on stage they still rock like it’s 1987.
+        - generic [ref=f1e147]:
+          - button [ref=f1e149] [cursor=pointer]:
+            - img "Kindred Spirit Brewing" [ref=f1e151]
+            - generic [ref=f1e153]:
+              - heading "Kindred Spirit Brewing" [level=4] [ref=f1e154]
+              - paragraph [ref=f1e155]: Aug 1, 2026
+          - button [ref=f1e157] [cursor=pointer]:
+            - img "Kindred Spirit Brewing" [ref=f1e159]
+            - generic [ref=f1e161]:
+              - heading "Kindred Spirit Brewing" [level=4] [ref=f1e162]
+              - paragraph [ref=f1e163]: Aug 1, 2026
+          - button [ref=f1e165] [cursor=pointer]:
+            - img "Kindred Spirit Brewing" [ref=f1e167]
+            - generic [ref=f1e169]:
+              - heading "Kindred Spirit Brewing" [level=4] [ref=f1e170]
+              - paragraph [ref=f1e171]: Aug 1, 2026
+          - button [ref=f1e173] [cursor=pointer]:
+            - img "Kindred Spirit Brewing" [ref=f1e175]
+            - generic [ref=f1e177]:
+              - heading "Kindred Spirit Brewing" [level=4] [ref=f1e178]
+              - paragraph [ref=f1e179]: Aug 1, 2026
+          - button [ref=f1e181] [cursor=pointer]:
+            - img "Group Photo" [ref=f1e183]
+            - generic [ref=f1e185]:
+              - heading "Group Photo" [level=4] [ref=f1e186]
+              - paragraph [ref=f1e187]: Aug 1, 2026
+          - button [ref=f1e189] [cursor=pointer]:
+            - img "Kindred Spirit Brewing" [ref=f1e191]
+            - generic [ref=f1e193]:
+              - heading "Kindred Spirit Brewing" [level=4] [ref=f1e194]
+              - paragraph [ref=f1e195]: Aug 1, 2026
+          - button [ref=f1e197] [cursor=pointer]:
+            - img "Strangeway Brewery" [ref=f1e199]
+            - generic [ref=f1e201]:
+              - heading "Strangeway Brewery" [level=4] [ref=f1e202]
+              - paragraph [ref=f1e203]: Apr 18, 2026
+          - button [ref=f1e205] [cursor=pointer]:
+            - img "Kindred Spirit Brewing" [ref=f1e207]
+            - generic [ref=f1e209]:
+              - heading "Kindred Spirit Brewing" [level=4] [ref=f1e210]
+              - paragraph [ref=f1e211]: Apr 3, 2026
+          - button [ref=f1e213] [cursor=pointer]:
+            - img "Kindred Spirit Brewing" [ref=f1e215]
+            - generic [ref=f1e217]:
+              - heading "Kindred Spirit Brewing" [level=4] [ref=f1e218]
+              - paragraph [ref=f1e219]: Apr 3, 2026
+          - button [ref=f1e221] [cursor=pointer]:
+            - img "Kindred Spirit Brewing" [ref=f1e223]
+            - generic [ref=f1e225]:
+              - heading "Kindred Spirit Brewing" [level=4] [ref=f1e226]
+              - paragraph [ref=f1e227]: Apr 3, 2026
+          - button [ref=f1e229] [cursor=pointer]:
+            - img "Midnight Brewery" [ref=f1e231]
+            - generic [ref=f1e233]:
+              - heading "Midnight Brewery" [level=4] [ref=f1e234]
+              - paragraph [ref=f1e235]: Mar 13, 2026
+          - button [ref=f1e237] [cursor=pointer]:
+            - img "Midnight Brewery" [ref=f1e239]
+            - generic [ref=f1e241]:
+              - heading "Midnight Brewery" [level=4] [ref=f1e242]
+              - paragraph [ref=f1e243]: Mar 13, 2026
+          - button [ref=f1e245] [cursor=pointer]:
+            - img "Kindred Spirit Brewing" [ref=f1e247]
+            - generic [ref=f1e249]:
+              - heading "Kindred Spirit Brewing" [level=4] [ref=f1e250]
+              - paragraph [ref=f1e251]: Feb 14, 2026
+          - button [ref=f1e253] [cursor=pointer]:
+            - img "Kindred Spirit Brewing" [ref=f1e255]
+            - generic [ref=f1e257]:
+              - heading "Kindred Spirit Brewing" [level=4] [ref=f1e258]
+              - paragraph [ref=f1e259]: Feb 14, 2026
+          - button [ref=f1e261] [cursor=pointer]:
+            - img "Kindred Spirit Brewing" [ref=f1e263]
+            - generic [ref=f1e265]:
+              - heading "Kindred Spirit Brewing" [level=4] [ref=f1e266]
+              - paragraph [ref=f1e267]: Feb 14, 2026
+          - button [ref=f1e269] [cursor=pointer]:
+            - img "Kindred Spirit Brewing" [ref=f1e271]
+            - generic [ref=f1e273]:
+              - heading "Kindred Spirit Brewing" [level=4] [ref=f1e274]
+              - paragraph [ref=f1e275]: Feb 14, 2026
+          - button [ref=f1e277] [cursor=pointer]:
+            - img "Kindred Spirit Brewing" [ref=f1e279]
+            - generic [ref=f1e281]:
+              - heading "Kindred Spirit Brewing" [level=4] [ref=f1e282]
+              - paragraph [ref=f1e283]: Feb 14, 2026
+          - button [ref=f1e285] [cursor=pointer]:
+            - img "Kindred Spirit Brewing" [ref=f1e287]
+            - generic [ref=f1e289]:
+              - heading "Kindred Spirit Brewing" [level=4] [ref=f1e290]
+              - paragraph [ref=f1e291]: Feb 14, 2026
+      - dialog [active] [ref=f1e292]:
+        - generic [ref=f1e293]:
+          - generic [ref=f1e294]:
+            - heading "Kindred Spirit Brewing" [level=5] [ref=f1e295]
+            - button "Close" [ref=f1e296] [cursor=pointer]
+          - generic [ref=f1e297]:
+            - img "Kindred Spirit Brewing" [ref=f1e298]
+            - paragraph [ref=f1e299]: Aug 1, 2026
+  - contentinfo [ref=f1e72]:
+    - generic [ref=f1e74]:
+      - generic [ref=f1e75]:
+        - img "footer-logo" [ref=f1e76]
+        - list [ref=f1e78]:
+          - listitem [ref=f1e79]:
+            - link [ref=f1e80] [cursor=pointer]:
+              - /url: https://www.facebook.com/rivercitysyndicateva
+          - listitem [ref=f1e82]:
+            - link [ref=f1e83] [cursor=pointer]:
+              - /url: https://www.youtube.com/@RiverCitySyndicate
+      - generic [ref=f1e85]:
+        - heading "Quick Links" [level=3] [ref=f1e86]
+        - list [ref=f1e89]:
+          - listitem [ref=f1e90]:
+            - link "Home" [ref=f1e91] [cursor=pointer]:
+              - /url: /
+          - listitem [ref=f1e92]:
+            - link "Shows" [ref=f1e93] [cursor=pointer]:
+              - /url: /shows
+          - listitem [ref=f1e94]:
+            - link "Photos" [ref=f1e95] [cursor=pointer]:
+              - /url: /photos
+          - listitem [ref=f1e96]:
+            - link "Videos" [ref=f1e97] [cursor=pointer]:
+              - /url: /videos
+          - listitem [ref=f1e98]:
+            - link "Links" [ref=f1e99] [cursor=pointer]:
+              - /url: /links
+      - generic [ref=f1e100]:
+        - heading "Get in Touch" [level=3] [ref=f1e101]
+        - list [ref=f1e102]:
+          - listitem [ref=f1e103]:
+            - link "(804) 475-5378" [ref=f1e107] [cursor=pointer]:
+              - /url: tel:8044755378
+          - listitem [ref=f1e108]:
+            - link "shane.fowlkes.70@gmail.com" [ref=f1e112] [cursor=pointer]:
+              - /url: mailto:shane.fowlkes.70@gmail.com
+    - paragraph [ref=f1e117]: River City Syndicate 2026. All Rights Reserved.
