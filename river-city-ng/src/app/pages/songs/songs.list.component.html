@@ -13,11 +13,15 @@
         <div class="alert alert-danger">{{ errorMessage }}</div>
     }
 
-    @if (!errorMessage && songs.length === 0) {
-        <p>Loading songs...</p>
+    @if (!errorMessage && loading) {
+        <div class="d-flex justify-content-center py-5">
+            <div class="spinner-border text-primary" role="status">
+                <span class="visually-hidden">Loading songs...</span>
+            </div>
+        </div>
     }
 
-    @if (songs.length > 0) {
+    @if (!loading && songs.length > 0) {
         <table class="table table-dark table-striped table-hover table-bordered">
           <thead class="table-secondary">
             <tr>

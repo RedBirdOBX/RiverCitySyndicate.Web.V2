@@ -2,11 +2,13 @@
     {{ errorMessage }}
 </div>
 
-<div *ngIf="!errorMessage && shows.length === 0">
-    Loading shows...
+<div *ngIf="!errorMessage && loading" class="d-flex justify-content-center py-5">
+    <div class="spinner-border text-primary" role="status">
+        <span class="visually-hidden">Loading shows...</span>
+    </div>
 </div>
 
-<section>
+<section *ngIf="!loading && !errorMessage">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-12">

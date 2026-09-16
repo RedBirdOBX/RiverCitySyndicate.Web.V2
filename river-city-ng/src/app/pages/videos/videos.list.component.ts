@@ -11,6 +11,8 @@ import { VideoService } from '../../services/video.service';
 })
 export class VideosListComponent implements OnInit, AfterViewInit {
   videos: Video[] = [];
+  errorMessage: string = '';
+  loading: boolean = true;
   selectedVideoUrl: SafeResourceUrl | null = null;
   selectedVideoTitle = '';
 
@@ -23,7 +25,10 @@ export class VideosListComponent implements OnInit, AfterViewInit {
   ) {}
 
   ngOnInit(): void {
-    this.videoSvc.getVideos().subscribe({ next: videos => this.videos = videos });
+    this.videoSvc.getVideos().subscribe({
+      next: videos => { this.videos = videos; this.loading = false; },
+      error: error => { this.errorMessage = error.message; this.loading = false; }
+    });
   }
 
   ngAfterViewInit(): void {

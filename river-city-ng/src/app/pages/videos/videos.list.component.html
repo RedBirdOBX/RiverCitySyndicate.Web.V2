@@ -1,37 +1,51 @@
-<section>
-    <div class="container">
-        <div class="row mb-1-9 mb-lg-6">
-            <div class="section-heading col-12">
-                <h2>Videos Gallery</h2>
-                <p class="w-md-75 w-lg-55">A collection of the latest videos.</p>
-            </div>
-            <div class="col-12">
-                <div class="row g-4">
-                    @for (video of videos; track video.id) {
-                        <div class="col-12 col-sm-6 col-lg-4">
-                            <div class="video-card"
-                                 data-bs-toggle="modal"
-                                 data-bs-target="#videoModal"
-                                 (click)="selectVideo(video)"
-                                 role="button"
-                                 tabindex="0">
-                                <div class="thumbnail-wrapper">
-                                    <img [src]="thumbnailUrl(video.html)"
-                                         [alt]="video.description"
-                                         class="img-fluid w-100" />
-                                    <div class="play-overlay">
-                                        <span class="play-icon">&#9654;</span>
+@if (errorMessage) {
+    <div class="alert alert-danger">{{ errorMessage }}</div>
+}
+
+@if (!errorMessage && loading) {
+    <div class="d-flex justify-content-center py-5">
+        <div class="spinner-border text-primary" role="status">
+            <span class="visually-hidden">Loading videos...</span>
+        </div>
+    </div>
+}
+
+@if (!loading && !errorMessage) {
+    <section>
+        <div class="container">
+            <div class="row mb-1-9 mb-lg-6">
+                <div class="section-heading col-12">
+                    <h2>Videos Gallery</h2>
+                    <p class="w-md-75 w-lg-55">A collection of the latest videos.</p>
+                </div>
+                <div class="col-12">
+                    <div class="row g-4">
+                        @for (video of videos; track video.id) {
+                            <div class="col-12 col-sm-6 col-lg-4">
+                                <div class="video-card"
+                                     data-bs-toggle="modal"
+                                     data-bs-target="#videoModal"
+                                     (click)="selectVideo(video)"
+                                     role="button"
+                                     tabindex="0">
+                                    <div class="thumbnail-wrapper">
+                                        <img [src]="thumbnailUrl(video.html)"
+                                             [alt]="video.description"
+                                             class="img-fluid w-100" />
+                                        <div class="play-overlay">
+                                            <span class="play-icon">&#9654;</span>
+                                        </div>
                                     </div>
+                                    <p class="video-title mt-2 mb-0">{{ video.description }}</p>
                                 </div>
-                                <p class="video-title mt-2 mb-0">{{ video.description }}</p>
                             </div>
-                        </div>
-                    }
+                        }
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
+}
 
 <div class="modal fade" id="videoModal" tabindex="-1" #videoModal>
     <div class="modal-dialog modal-lg modal-dialog-centered">

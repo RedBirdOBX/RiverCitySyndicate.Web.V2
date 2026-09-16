@@ -15,14 +15,15 @@ export class ShowsListComponent  implements OnInit
 {
     shows: Show[] = [];
     errorMessage: string = '';
+    loading: boolean = true;
 
     constructor(private showSvc: ShowService) {}
 
     ngOnInit(): void
     {
         this.showSvc.getShows().subscribe({
-            next: shows => this.shows = shows,
-            error: error => this.errorMessage = error.message
+            next: shows => { this.shows = shows; this.loading = false; },
+            error: error => { this.errorMessage = error.message; this.loading = false; }
         });
     }
 }
