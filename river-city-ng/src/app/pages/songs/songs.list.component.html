@@ -1,0 +1,47 @@
+<div class="container py-5">
+
+    <h1 class="display-4 fw-bold mb-1">River City Syndicate</h1>
+    <p class="text-secondary mb-4">Master Song List</p>
+
+    <p>
+      <a href="https://open.spotify.com/playlist/6vOD3hin1PCa0f35iwKY1v?si=3Qp-2ttgTn2ppJhkOIMjQQ" target="_blank">
+        References on Spotify - https://open.spotify.com/playlist/6vOD3hin1PCa0f35iwKY1v?si=3Qp-2ttgTn2ppJhkOIMjQQ
+      </a>
+    </p>
+
+    @if (errorMessage) {
+        <div class="alert alert-danger">{{ errorMessage }}</div>
+    }
+
+    @if (!errorMessage && songs.length === 0) {
+        <p>Loading songs...</p>
+    }
+
+    @if (songs.length > 0) {
+        <table class="table table-dark table-striped table-hover table-bordered">
+          <thead class="table-secondary">
+            <tr>
+              <th>Song</th>
+              <th>Artist</th>
+            </tr>
+          </thead>
+          <tbody>
+            @for (song of songs; track song.id) {
+                <tr>
+                    <td>{{ song.title }}</td>
+                    <td>
+                        @if (isOriginal(song.artist)) {
+                            <span class="badge text-bg-warning">Original</span>
+                        } @else {
+                            {{ song.artist }}
+                        }
+                    </td>
+                </tr>
+            }
+          </tbody>
+        </table>
+
+        <p class="text-secondary small"><span class="badge text-bg-warning">Original</span> — band original composition</p>
+    }
+
+  </div>
