@@ -21,3 +21,15 @@
 .top-position1 {
     margin-top: -152px;
 }
+
+
+#nav {
+    li a {
+        transition: color 0.2s ease;
+
+        &:hover,
+        &:focus {
+            color: $red-color;
+        }
+    }
+}

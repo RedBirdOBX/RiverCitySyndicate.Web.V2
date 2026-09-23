@@ -16,18 +16,25 @@ export class HomeNextshowComponent implements OnInit
 {
 
     nextShow?: Show;
+    errorMessage: string = '';
+    loading: boolean = true;
 
     constructor(private showSvc: ShowService) {}
 
     ngOnInit(): void
     {
-        this.showSvc.getNextShow().subscribe(show => {
-            this.nextShow = show;
+        this.showSvc.getNextShow().subscribe({
+            next: show => {
+                this.nextShow = show;
 
-            // update show image path
-            if (this.nextShow?.image) {
-                this.nextShow.image = `url('/assets/imgs/content/gigs/${this.nextShow.image}')`;
-            }
+                // update show image path
+                if (this.nextShow?.image) {
+                    this.nextShow.image = `url('/assets/imgs/content/gigs/${this.nextShow.image}')`;
+                }
+
+                this.loading = false;
+            },
+            error: error => { this.errorMessage = error.message; this.loading = false; }
         });
     }
 }
