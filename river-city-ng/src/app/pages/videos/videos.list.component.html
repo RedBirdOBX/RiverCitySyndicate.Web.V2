@@ -59,7 +59,8 @@
                     <div class="ratio ratio-16x9">
                         <iframe [src]="selectedVideoUrl"
                                 allowfullscreen
-                                allow="autoplay; encrypted-media; picture-in-picture">
+                                allow="autoplay; encrypted-media; picture-in-picture"
+                                referrerpolicy="strict-origin-when-cross-origin">
                         </iframe>
                     </div>
                 }
