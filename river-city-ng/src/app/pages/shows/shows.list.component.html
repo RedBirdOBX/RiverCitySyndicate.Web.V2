@@ -58,9 +58,12 @@
                                                     }
                                                 </div>
                                                 <div class="col-6">
-                                                    <a target="_blank" href="{{show.mapUrl}}">
-                                                        <span class="fa fa-2x fa-map-marker"></span>&nbsp;map
-                                                    </a>
+                                                    @if (show.mapUrl)
+                                                    {
+                                                        <a target="_blank" [href]="show.mapUrl">
+                                                            <span class="fa fa-2x fa-map-marker"></span>&nbsp;map
+                                                        </a>
+                                                    }
                                                 </div>
                                             </div>
                                         </div>
