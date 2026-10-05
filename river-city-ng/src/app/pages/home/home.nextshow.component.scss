@@ -1,0 +1,5 @@
+// Show images are 400px tall; keep the container at least that tall so the
+// image isn't cropped top/bottom when the card-body content is short.
+#next-show-img-container {
+  min-height: 400px;
+}
