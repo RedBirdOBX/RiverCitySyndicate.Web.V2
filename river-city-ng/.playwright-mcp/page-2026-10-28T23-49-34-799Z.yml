@@ -1,0 +1,59 @@
+- generic [ref=f1e3]:
+  - banner [ref=f1e5]:
+    - navigation [ref=f1e11]:
+      - link [ref=f1e13] [cursor=pointer]:
+        - /url: /
+        - img "River City Syndicate - Premiere good-time band from Richmond, Virginia" [ref=f1e14]
+      - generic [ref=f1e15] [cursor=pointer]
+  - generic [ref=f1e16]:
+    - generic [ref=f1e21]:
+      - heading "RIVER CITY SYNDICATE" [level=1] [ref=f1e22]
+      - generic [ref=f1e23]: Upcoming Shows
+    - generic [ref=f1e29]:
+      - img "Elle Christine" [ref=f1e32]
+      - generic [ref=f1e35]:
+        - heading "About River City Syndicate" [level=2] [ref=f1e36]
+        - paragraph [ref=f1e37]: River City Syndicate is a fun-loving rock band based out of Richmond, Virginia, made up of middle-aged men who still remember when gas was cheap and rock was loud. They tear through crowd-pleasing covers of all your favorite hits—mostly from back when knees didn’t crack—while sneaking in a few original songs for good measure. Equal parts energy and experience, they’ll get you up and dancing, or at least enthusiastically nodding along while reminiscing about “the good old days.” Whether it’s a packed dance floor or a well-earned beer break, these guys know how to bring the party.
+    - generic [ref=f1e43]:
+      - heading "Next Show" [level=2] [ref=f1e45]
+      - status [ref=f1e47]:
+        - generic [ref=f1e48]: Loading next show...
+  - contentinfo [ref=f1e50]:
+    - generic [ref=f1e52]:
+      - generic [ref=f1e53]:
+        - img "footer-logo" [ref=f1e54]
+        - list [ref=f1e56]:
+          - listitem [ref=f1e57]:
+            - link [ref=f1e58] [cursor=pointer]:
+              - /url: https://www.facebook.com/rivercitysyndicateva
+          - listitem [ref=f1e60]:
+            - link [ref=f1e61] [cursor=pointer]:
+              - /url: https://www.youtube.com/@RiverCitySyndicate
+      - generic [ref=f1e63]:
+        - heading "Quick Links" [level=3] [ref=f1e64]
+        - list [ref=f1e67]:
+          - listitem [ref=f1e68]:
+            - link "Home" [ref=f1e69] [cursor=pointer]:
+              - /url: /
+          - listitem [ref=f1e70]:
+            - link "Shows" [ref=f1e71] [cursor=pointer]:
+              - /url: /shows
+          - listitem [ref=f1e72]:
+            - link "Photos" [ref=f1e73] [cursor=pointer]:
+              - /url: /photos
+          - listitem [ref=f1e74]:
+            - link "Videos" [ref=f1e75] [cursor=pointer]:
+              - /url: /videos
+          - listitem [ref=f1e76]:
+            - link "Links" [ref=f1e77] [cursor=pointer]:
+              - /url: /links
+      - generic [ref=f1e78]:
+        - heading "Get in Touch" [level=3] [ref=f1e79]
+        - list [ref=f1e80]:
+          - listitem [ref=f1e81]:
+            - link "(804) 475-5378" [ref=f1e85] [cursor=pointer]:
+              - /url: tel:8044755378
+          - listitem [ref=f1e86]:
+            - link "shane.fowlkes.70@gmail.com" [ref=f1e90] [cursor=pointer]:
+              - /url: mailto:shane.fowlkes.70@gmail.com
+    - paragraph [ref=f1e95]: River City Syndicate 2026. All Rights Reserved.

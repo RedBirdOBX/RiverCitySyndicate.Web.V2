@@ -1,0 +1,90 @@
+- generic [ref=e3]:
+  - banner [ref=e5]:
+    - navigation [ref=e11]:
+      - link [ref=e13] [cursor=pointer]:
+        - /url: /
+        - img "River City Syndicate - Premiere good-time band from Richmond, Virginia" [ref=e14]
+      - list [ref=e15]:
+        - listitem [ref=e16]:
+          - link "Home" [ref=e17] [cursor=pointer]:
+            - /url: /
+        - listitem [ref=e18]:
+          - link "Shows" [ref=e19] [cursor=pointer]:
+            - /url: /shows
+        - listitem [ref=e20]:
+          - link "Photos" [ref=e21] [cursor=pointer]:
+            - /url: /photos
+        - listitem [ref=e22]:
+          - link "Videos" [ref=e23] [cursor=pointer]:
+            - /url: /videos
+        - listitem [ref=e24]:
+          - link "Links" [ref=e25] [cursor=pointer]:
+            - /url: /links
+  - generic [ref=e127]:
+    - generic [ref=e131]:
+      - heading "Kindred Spirit Brewing" [level=1] [ref=e133]
+      - list [ref=e135]:
+        - listitem [ref=e136]:
+          - link "Home" [ref=e137] [cursor=pointer]:
+            - /url: /
+          - text: 
+        - listitem [ref=e138]:
+          - link "Shows" [ref=e139] [cursor=pointer]:
+            - /url: /shows
+          - text: 
+        - listitem [ref=e140]: Kindred Spirit Brewing
+    - generic [ref=e143]:
+      - img "Kindred Spirit Brewing" [ref=e145]
+      - generic [ref=e146]:
+        - heading "Kindred Spirit Brewing" [level=1] [ref=e147]
+        - paragraph [ref=e148]: Saturday, November 7, 2026
+        - paragraph [ref=e149]: 6-9 pm
+        - separator [ref=e150]
+        - paragraph [ref=e151]: Richmond, VA
+        - paragraph [ref=e153]: Kindred Spirit Brewing is all about beer and people. What started as a small group of friends has grown into a circle that includes a dedicated staff, loyal customers, and the greater Goochland community. Suberb crafted beers and great music.
+        - generic [ref=e154]:
+          - link "Back to Shows" [ref=e155] [cursor=pointer]:
+            - /url: /shows
+          - link "Event Info" [ref=e157] [cursor=pointer]:
+            - /url: https://www.kindredspiritbrewing.com/new_website/live-events-west-creek/
+          - link "Map" [ref=e159] [cursor=pointer]:
+            - /url: https://www.google.com/maps/place/Kindred+Spirit+Brewing/@37.6097218,-77.6748965,17z/data=!3m1!4b1!4m6!3m5!1s0x89b169694fe3605d:0x8ca2b2a8b997967b!8m2!3d37.6097177!4d-77.6700256!16s%2Fg%2F11bxdd6dp6?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoASAFQAw%3D%3D
+  - contentinfo [ref=e81]:
+    - generic [ref=e83]:
+      - generic [ref=e84]:
+        - img "footer-logo" [ref=e85]
+        - list [ref=e87]:
+          - listitem [ref=e88]:
+            - link [ref=e89] [cursor=pointer]:
+              - /url: https://www.facebook.com/rivercitysyndicateva
+          - listitem [ref=e91]:
+            - link [ref=e92] [cursor=pointer]:
+              - /url: https://www.youtube.com/@RiverCitySyndicate
+      - generic [ref=e94]:
+        - heading "Quick Links" [level=3] [ref=e95]
+        - list [ref=e98]:
+          - listitem [ref=e99]:
+            - link "Home" [ref=e100] [cursor=pointer]:
+              - /url: /
+          - listitem [ref=e101]:
+            - link "Shows" [ref=e102] [cursor=pointer]:
+              - /url: /shows
+          - listitem [ref=e103]:
+            - link "Photos" [ref=e104] [cursor=pointer]:
+              - /url: /photos
+          - listitem [ref=e105]:
+            - link "Videos" [ref=e106] [cursor=pointer]:
+              - /url: /videos
+          - listitem [ref=e107]:
+            - link "Links" [ref=e108] [cursor=pointer]:
+              - /url: /links
+      - generic [ref=e109]:
+        - heading "Get in Touch" [level=3] [ref=e110]
+        - list [ref=e111]:
+          - listitem [ref=e112]:
+            - link "(804) 475-5378" [ref=e116] [cursor=pointer]:
+              - /url: tel:8044755378
+          - listitem [ref=e117]:
+            - link "shane.fowlkes.70@gmail.com" [ref=e121] [cursor=pointer]:
+              - /url: mailto:shane.fowlkes.70@gmail.com
+    - paragraph [ref=e126]: River City Syndicate 2026. All Rights Reserved.
