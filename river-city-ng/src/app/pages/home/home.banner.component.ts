@@ -1,8 +1,9 @@
 import { Component, HostListener, OnInit } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-home-banner',
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './home.banner.component.html',
   styleUrl: './home.banner.component.scss'
 })
