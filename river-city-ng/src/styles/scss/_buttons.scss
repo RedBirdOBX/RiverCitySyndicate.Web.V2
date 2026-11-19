@@ -4,3 +4,9 @@
     color: #fff;
 }
 
+// Match the theme-hover fill to the red used by "butn primary"
+.butn.white.theme-hover:after
+{
+    background: $red-color !important;
+}
+

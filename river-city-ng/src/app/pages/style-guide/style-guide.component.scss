@@ -2,4 +2,10 @@
   section h2 {
     font-size: 1.5rem;
   }
+
+  // Dark backdrop so white/light-on-dark butn variants are visible
+  .sg-butn-dark {
+    background: #282b2d;
+    border-radius: 4px;
+  }
 }

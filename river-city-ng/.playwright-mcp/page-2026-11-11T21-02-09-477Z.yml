@@ -1,0 +1,191 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - link "Portico home" [ref=e3] [cursor=pointer]:
+      - /url: /
+      - img "Portico logo" [ref=e4]
+      - generic [ref=e5]: PORTICO.
+    - navigation "Main navigation" [ref=e6]:
+      - link "About" [ref=e7] [cursor=pointer]:
+        - /url: /about
+      - link "Shows" [ref=e8] [cursor=pointer]:
+        - /url: "#shows"
+      - link "Videos" [ref=e9] [cursor=pointer]:
+        - /url: /videos
+      - link "Song List" [ref=e10] [cursor=pointer]:
+        - /url: /songs
+      - link "Book Portico ↗" [ref=e11] [cursor=pointer]:
+        - /url: /contact
+  - main [ref=e12]:
+    - generic [ref=e13]:
+      - generic [ref=e14]:
+        - generic [ref=e15]: ✦ RICHMOND, VIRGINIA · LIVE MUSIC
+        - heading [level=1] [ref=e16]:
+          - text: GOOD MUSIC.
+          - emphasis [ref=e17]: GOOD TIMES.
+        - paragraph [ref=e18]: A little bit of everything across genres and decades—with our own twist.
+        - generic [ref=e19]:
+          - link "See us live ↗" [ref=e20] [cursor=pointer]:
+            - /url: "#shows"
+            - text: See us live
+            - generic [ref=e21]: ↗
+          - link "Book the band →" [ref=e22] [cursor=pointer]:
+            - /url: /contact
+            - text: Book the band
+            - generic [ref=e23]: →
+        - generic [ref=e24]: FUNKY GROOVES · ROCK FAVORITES · UNEXPECTED TWISTS
+      - 'figure "Photo: Dave Parrish Photography" [ref=e25]':
+        - img "Portico's four members performing live outdoors" [ref=e26]
+      - generic [ref=e28]: ✳TIME TOROCK
+    - generic [ref=e32]: ✦ ROCK ✦ SOUL ✦ FUNK ✦ POP ✦ BLUES ✦ A LITTLE OF EVERYTHING ✦ ROCK ✦ SOUL ✦ FUNK ✦ POP ✦ BLUES ✦
+    - generic [ref=e33]:
+      - generic [ref=e34]: THE BAND
+      - generic [ref=e35]:
+        - heading [level=2] [ref=e36]:
+          - text: NOT YOUR AVERAGE
+          - emphasis [ref=e37]: COVER BAND.
+        - paragraph [ref=e38]: "We're Portico: a Richmond-based band putting our own spin on familiar favorites. From funky grooves to rock classics and unexpected deep cuts, we love keeping things interesting. And yes, there's a flute."
+        - link "Have us play your event ↗" [ref=e39] [cursor=pointer]:
+          - /url: /contact
+    - generic [ref=e40]:
+      - generic [ref=e41]: FIND US OUT THERE
+      - generic [ref=e42]:
+        - heading [level=2] [ref=e43]:
+          - text: COMING
+          - emphasis [ref=e44]: UP.
+        - paragraph [ref=e45]: See where we’re playing publicly below! We also perform at private parties, corporate events, weddings, and other celebrations that aren’t listed here. Want Portico at your event? Get in touch!
+        - generic [ref=e49]:
+          - generic [ref=e50]:
+            - generic [ref=e51]: Get updates on new shows, new music, and more
+            - link "Follow Portico" [ref=e52] [cursor=pointer]:
+              - /url: https://www.bandsintown.com/artist-subscribe/15586557-portico?app_id=js_porticoband.com&bg-color=rgba%28246%2C233%2C216%2C1%29&border-color=rgba%280%2C0%2C0%2C1%29&came_from=700&cta-bg-color=rgba%28255%2C255%2C255%2C1%29&cta-border-color=rgba%280%2C0%2C0%2C1%29&cta-border-radius=4px&cta-border-width=1px&cta-text-color=rgba%280%2C0%2C0%2C1%29&font=DM%20Sans&play-my-city=false&signature=ZZb813f176caef49ca32f23ae30e7f70119ccfa7802e6231ba6f95dbb031e00217&spn=0&text-color=rgba%2833%2C30%2C34%2C1%29&utm_campaign=track&utm_medium=web&utm_source=widget
+          - generic [ref=e58]:
+            - link "Dec. 4, 2026 Henrico, VA Richmond Country Club Notify Me" [ref=e59] [cursor=pointer]:
+              - /url: https://www.bandsintown.com/e/109068838?app_id=js_porticoband.com&came_from=700&utm_campaign=event&utm_medium=web&utm_source=widget
+              - generic [ref=e60]: Dec. 4, 2026
+              - generic [ref=e63]:
+                - link:
+                  - /url: https://www.bandsintown.com/e/109068838?app_id=js_porticoband.com&came_from=700&utm_campaign=event&utm_medium=web&utm_source=widget
+                - link "Henrico, VA" [ref=e64]:
+                  - /url: https://www.bandsintown.com/e/109068838?app_id=js_porticoband.com&came_from=700&utm_campaign=event&utm_medium=web&utm_source=widget
+                - link "Richmond Country Club" [ref=e66]:
+                  - /url: https://www.bandsintown.com/e/109068838?app_id=js_porticoband.com&came_from=700&utm_campaign=event&utm_medium=web&utm_source=widget
+              - link "Notify Me" [ref=e70]:
+                - /url: https://www.bandsintown.com/artist-rsvp/15586557-portico?app_id=js_porticoband.com&bg-color=rgba%28246%2C233%2C216%2C1%29&border-color=rgba%280%2C0%2C0%2C1%29&came_from=700&cta-bg-color=rgba%28255%2C255%2C255%2C1%29&cta-border-color=rgba%280%2C0%2C0%2C1%29&cta-border-radius=4px&cta-border-width=1px&cta-text-color=rgba%280%2C0%2C0%2C1%29&event_id=109068838&font=DM%20Sans&signature=ZZb813f176caef49ca32f23ae30e7f70119ccfa7802e6231ba6f95dbb031e00217&spn=0&text-color=rgba%2833%2C30%2C34%2C1%29&utm_campaign=notify_me&utm_medium=web&utm_source=widget
+            - link "Mar. 5, 2027 Powhatan, VA Crazy Rooster Brewing Company Notify Me" [ref=e72] [cursor=pointer]:
+              - /url: https://www.bandsintown.com/e/109068847?app_id=js_porticoband.com&came_from=700&utm_campaign=event&utm_medium=web&utm_source=widget
+              - generic [ref=e73]: Mar. 5, 2027
+              - generic [ref=e76]:
+                - link:
+                  - /url: https://www.bandsintown.com/e/109068847?app_id=js_porticoband.com&came_from=700&utm_campaign=event&utm_medium=web&utm_source=widget
+                - link "Powhatan, VA" [ref=e77]:
+                  - /url: https://www.bandsintown.com/e/109068847?app_id=js_porticoband.com&came_from=700&utm_campaign=event&utm_medium=web&utm_source=widget
+                - link "Crazy Rooster Brewing Company" [ref=e79]:
+                  - /url: https://www.bandsintown.com/e/109068847?app_id=js_porticoband.com&came_from=700&utm_campaign=event&utm_medium=web&utm_source=widget
+              - link "Notify Me" [ref=e83]:
+                - /url: https://www.bandsintown.com/artist-rsvp/15586557-portico?app_id=js_porticoband.com&bg-color=rgba%28246%2C233%2C216%2C1%29&border-color=rgba%280%2C0%2C0%2C1%29&came_from=700&cta-bg-color=rgba%28255%2C255%2C255%2C1%29&cta-border-color=rgba%280%2C0%2C0%2C1%29&cta-border-radius=4px&cta-border-width=1px&cta-text-color=rgba%280%2C0%2C0%2C1%29&event_id=109068847&font=DM%20Sans&signature=ZZb813f176caef49ca32f23ae30e7f70119ccfa7802e6231ba6f95dbb031e00217&spn=0&text-color=rgba%2833%2C30%2C34%2C1%29&utm_campaign=notify_me&utm_medium=web&utm_source=widget
+            - link "Jul. 2, 2027 Richmond, VA Virginia Museum of Fine Arts Notify Me" [ref=e85] [cursor=pointer]:
+              - /url: https://www.bandsintown.com/e/109068857?app_id=js_porticoband.com&came_from=700&utm_campaign=event&utm_medium=web&utm_source=widget
+              - generic [ref=e86]: Jul. 2, 2027
+              - generic [ref=e89]:
+                - link:
+                  - /url: https://www.bandsintown.com/e/109068857?app_id=js_porticoband.com&came_from=700&utm_campaign=event&utm_medium=web&utm_source=widget
+                - link "Richmond, VA" [ref=e90]:
+                  - /url: https://www.bandsintown.com/e/109068857?app_id=js_porticoband.com&came_from=700&utm_campaign=event&utm_medium=web&utm_source=widget
+                - link "Virginia Museum of Fine Arts" [ref=e92]:
+                  - /url: https://www.bandsintown.com/e/109068857?app_id=js_porticoband.com&came_from=700&utm_campaign=event&utm_medium=web&utm_source=widget
+              - link "Notify Me" [ref=e96]:
+                - /url: https://www.bandsintown.com/artist-rsvp/15586557-portico?app_id=js_porticoband.com&bg-color=rgba%28246%2C233%2C216%2C1%29&border-color=rgba%280%2C0%2C0%2C1%29&came_from=700&cta-bg-color=rgba%28255%2C255%2C255%2C1%29&cta-border-color=rgba%280%2C0%2C0%2C1%29&cta-border-radius=4px&cta-border-width=1px&cta-text-color=rgba%280%2C0%2C0%2C1%29&event_id=109068857&font=DM%20Sans&signature=ZZb813f176caef49ca32f23ae30e7f70119ccfa7802e6231ba6f95dbb031e00217&spn=0&text-color=rgba%2833%2C30%2C34%2C1%29&utm_campaign=notify_me&utm_medium=web&utm_source=widget
+            - link "Oct. 2, 2027 Powhatan, VA Crazy Rooster Brewing Company Notify Me" [ref=e98] [cursor=pointer]:
+              - /url: https://www.bandsintown.com/e/109068860?app_id=js_porticoband.com&came_from=700&utm_campaign=event&utm_medium=web&utm_source=widget
+              - generic [ref=e99]: Oct. 2, 2027
+              - generic [ref=e102]:
+                - link:
+                  - /url: https://www.bandsintown.com/e/109068860?app_id=js_porticoband.com&came_from=700&utm_campaign=event&utm_medium=web&utm_source=widget
+                - link "Powhatan, VA" [ref=e103]:
+                  - /url: https://www.bandsintown.com/e/109068860?app_id=js_porticoband.com&came_from=700&utm_campaign=event&utm_medium=web&utm_source=widget
+                - link "Crazy Rooster Brewing Company" [ref=e105]:
+                  - /url: https://www.bandsintown.com/e/109068860?app_id=js_porticoband.com&came_from=700&utm_campaign=event&utm_medium=web&utm_source=widget
+              - link "Notify Me" [ref=e109]:
+                - /url: https://www.bandsintown.com/artist-rsvp/15586557-portico?app_id=js_porticoband.com&bg-color=rgba%28246%2C233%2C216%2C1%29&border-color=rgba%280%2C0%2C0%2C1%29&came_from=700&cta-bg-color=rgba%28255%2C255%2C255%2C1%29&cta-border-color=rgba%280%2C0%2C0%2C1%29&cta-border-radius=4px&cta-border-width=1px&cta-text-color=rgba%280%2C0%2C0%2C1%29&event_id=109068860&font=DM%20Sans&signature=ZZb813f176caef49ca32f23ae30e7f70119ccfa7802e6231ba6f95dbb031e00217&spn=0&text-color=rgba%2833%2C30%2C34%2C1%29&utm_campaign=notify_me&utm_medium=web&utm_source=widget
+          - generic [ref=e111]:
+            - generic [ref=e112]: Want a show near you?
+            - link "play my city" [ref=e113] [cursor=pointer]:
+              - /url: https://www.bandsintown.com/artist-subscribe/15586557-portico?app_id=js_porticoband.com&bg-color=rgba%28246%2C233%2C216%2C1%29&border-color=rgba%280%2C0%2C0%2C1%29&came_from=700&cta-bg-color=rgba%28255%2C255%2C255%2C1%29&cta-border-color=rgba%280%2C0%2C0%2C1%29&cta-border-radius=4px&cta-border-width=1px&cta-text-color=rgba%280%2C0%2C0%2C1%29&font=DM%20Sans&play-my-city=true&signature=ZZb813f176caef49ca32f23ae30e7f70119ccfa7802e6231ba6f95dbb031e00217&spn=0&text-color=rgba%2833%2C30%2C34%2C1%29&utm_campaign=play_my_city&utm_medium=web&utm_source=widget
+          - link [ref=e115] [cursor=pointer]:
+            - /url: https://www.bandsintown.com?app_id=js_porticoband.com&came_from=700&utm_campaign=bit_logo&utm_medium=web&utm_source=widget
+        - link "All shows on Bandsintown ↗" [ref=e124] [cursor=pointer]:
+          - /url: https://www.bandsintown.com/a/15586557-portico
+    - generic [ref=e125]:
+      - generic [ref=e126]: TURN IT UP
+      - generic [ref=e127]:
+        - heading [level=2] [ref=e128]:
+          - text: HEAR THE
+          - emphasis [ref=e129]: VIBE.
+        - iframe [ref=e131]:
+          - generic [ref=f1e1]:
+            - generic "YouTube Video Player" [ref=f1e3]
+            - generic [ref=f1e5]:
+              - generic:
+                - generic:
+                  - generic [ref=f1e6] [cursor=pointer]
+                  - button "Play video" [ref=f1e10] [cursor=pointer]
+                  - button "Hide player controls" [ref=f1e12] [cursor=pointer]
+                  - generic [ref=f1e14]:
+                    - generic [ref=f1e21]:
+                      - generic [ref=f1e22]:
+                        - link "Superstition (Stevie Wonder cover) Live at Hardywood West Creek" [ref=f1e23] [cursor=pointer]:
+                          - /url: https://www.youtube.com/watch?v=WNIf3mij_ms
+                        - link "Portico" [ref=f1e24] [cursor=pointer]:
+                          - /url: /channel/UCAwXkjRgbbk4hXXjsFHRQGg
+                      - generic [ref=f1e26]:
+                        - button [ref=f1e27] [cursor=pointer]
+                        - generic [ref=f1e29]:
+                          - generic: Portico
+                          - generic: 8 subscribers
+                    - generic [ref=f1e30]:
+                      - button "Copy link" [ref=f1e33] [cursor=pointer]
+                      - link "Watch on YouTube" [ref=f1e44] [cursor=pointer]:
+                        - /url: https://www.youtube.com/watch?v=WNIf3mij_ms
+                        - generic [ref=f1e45]: Watch on
+        - paragraph [ref=e132]: Watch more live performances on our Videos page.
+    - generic [ref=e133]:
+      - generic [ref=e134]: THE SETLIST
+      - generic [ref=e135]:
+        - heading [level=2] [ref=e136]:
+          - text: SOMETHING FOR
+          - emphasis [ref=e137]: EVERYBODY.
+        - paragraph [ref=e138]: We move between decades and genres and always add a little Portico flavor. If we like it, we’ll play it.
+        - generic [ref=e139]:
+          - generic [ref=e140]: Rock
+          - generic [ref=e141]: Funk
+          - generic [ref=e142]: Soul
+          - generic [ref=e143]: Blues
+          - generic [ref=e144]: Pop
+          - generic [ref=e145]: Surprises
+        - paragraph [ref=e146]: Search our full repertoire by song title or artist.
+    - generic [ref=e147]:
+      - generic [ref=e148]: LET'S MAKE SOME NOISE ✳
+      - heading [level=2] [ref=e149]:
+        - text: LET'S
+        - emphasis [ref=e150]: PLAY.
+      - paragraph [ref=e151]: Planning a party, private event, or a night of live music? We'd love to hear about it.
+      - link "Get in touch ↗" [ref=e152] [cursor=pointer]:
+        - /url: mailto:portico.rva@gmail.com?subject=Portico%20Booking%20Inquiry
+      - link "portico.rva@gmail.com" [ref=e153] [cursor=pointer]:
+        - /url: mailto:portico.rva@gmail.com
+  - contentinfo [ref=e154]:
+    - generic [ref=e155]:
+      - generic [ref=e156]: PORTICO✦
+      - generic [ref=e157]: Richmond, Virginia · Live music with a twist
+    - link "portico.rva@gmail.com" [ref=e158] [cursor=pointer]:
+      - /url: mailto:portico.rva@gmail.com
+    - generic "Follow Portico" [ref=e159]:
+      - link "Instagram" [ref=e160] [cursor=pointer]:
+        - /url: https://www.instagram.com/portico_music/
+      - link "Facebook" [ref=e165] [cursor=pointer]:
+        - /url: https://www.facebook.com/portico.band
+      - link "Bandsintown" [ref=e168] [cursor=pointer]:
+        - /url: https://www.bandsintown.com/a/15586557-portico
+  - iframe [ref=e169]:
+    - button "Powered by Netlify — build your own site" [ref=f2e3] [cursor=pointer]:
+      - generic [ref=f2e13]: Powered by Netlify

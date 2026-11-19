@@ -30,6 +30,10 @@ export const routes: Routes = [
         loadComponent: () => import('./pages/songs/songs.component').then(m => m.SongsComponent)
     },
     {
+        path: 'contact-us',
+        loadComponent: () => import('./pages/contact-us/contact-us.component').then(m => m.ContactUsComponent)
+    },
+    {
         path: 'style-guide',
         loadComponent: () => import('./pages/style-guide/style-guide.component').then(m => m.StyleGuideComponent)
     }
