@@ -1,0 +1,15 @@
+.venue-card {
+    height: 100%;
+    padding: 1.25rem 1.5rem;
+    background: #f7f7f7;
+    border-left: 3px solid #f94d1c;
+    border-radius: 2px;
+
+    a {
+        color: #282b2d;
+
+        &:hover {
+            color: #f94d1c;
+        }
+    }
+}

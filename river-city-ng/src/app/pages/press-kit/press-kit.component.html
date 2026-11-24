@@ -1,0 +1,48 @@
+<app-press-kit-title />
+
+<nav class="jump-nav" aria-label="Press kit sections">
+    <div class="container">
+        <ul>
+            @for (section of sections; track section.id) {
+                <li>
+                    <a [href]="'/press-kit#' + section.id" (click)="jumpTo($event, section.id)">{{ section.label }}</a>
+                </li>
+            }
+        </ul>
+    </div>
+</nav>
+
+<div id="about" class="kit-section">
+    <app-press-kit-about />
+</div>
+
+<div id="videos" class="kit-section">
+    <app-videos-list [limit]="3" [compact]="true" heading="Sample Videos" intro="A few recent clips from our live shows."
+                     (loaded)="scrollToTarget()" />
+</div>
+
+<div id="songs" class="kit-section">
+    <app-press-kit-songs (loaded)="scrollToTarget()" />
+</div>
+
+<div id="venues" class="kit-section">
+    <app-press-kit-venues (loaded)="scrollToTarget()" />
+</div>
+
+<div id="contact" class="kit-section">
+    <section class="sm">
+        <div class="container">
+            <div class="row mb-1-9">
+                <div class="section-heading col-12">
+                    <h2>Contact Us</h2>
+                    <p class="w-md-75 w-lg-55">Booking requests or questions? Drop us a line and we'll get back to you as soon as we can.</p>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <app-contact-form />
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

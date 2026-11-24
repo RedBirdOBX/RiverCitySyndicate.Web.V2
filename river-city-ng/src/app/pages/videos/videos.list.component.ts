@@ -1,4 +1,4 @@
-import { Component, OnInit, AfterViewInit, ElementRef, ViewChild, ChangeDetectorRef } from '@angular/core';
+import { Component, OnInit, AfterViewInit, ElementRef, ViewChild, ChangeDetectorRef, Input, Output, EventEmitter } from '@angular/core';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 import { Video } from '../../models/video';
 import { VideoService } from '../../services/video.service';
@@ -10,6 +10,15 @@ import { VideoService } from '../../services/video.service';
   styleUrl: './videos.list.component.scss'
 })
 export class VideosListComponent implements OnInit, AfterViewInit {
+  /** When set, only the first `limit` active videos are shown. */
+  @Input() limit?: number;
+  /** Uses the tighter section.sm spacing. */
+  @Input() compact = false;
+  @Input() heading = 'Videos Gallery';
+  @Input() intro = 'A collection of the latest videos.';
+  /** Fires once loading has finished, whether it succeeded or not. */
+  @Output() loaded = new EventEmitter<void>();
+
   videos: Video[] = [];
   errorMessage: string = '';
   loading: boolean = true;
@@ -26,8 +35,12 @@ export class VideosListComponent implements OnInit, AfterViewInit {
 
   ngOnInit(): void {
     this.videoSvc.getVideos().subscribe({
-      next: videos => { this.videos = videos; this.loading = false; },
-      error: error => { this.errorMessage = error.message; this.loading = false; }
+      next: videos => {
+        this.videos = this.limit ? videos.filter(video => video.active).slice(0, this.limit) : videos;
+        this.loading = false;
+        this.loaded.emit();
+      },
+      error: error => { this.errorMessage = error.message; this.loading = false; this.loaded.emit(); }
     });
   }
 

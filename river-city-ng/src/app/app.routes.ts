@@ -34,6 +34,10 @@ export const routes: Routes = [
         loadComponent: () => import('./pages/contact-us/contact-us.component').then(m => m.ContactUsComponent)
     },
     {
+        path: 'press-kit',
+        loadComponent: () => import('./pages/press-kit/press-kit.component').then(m => m.PressKitComponent)
+    },
+    {
         path: 'style-guide',
         loadComponent: () => import('./pages/style-guide/style-guide.component').then(m => m.StyleGuideComponent)
     }

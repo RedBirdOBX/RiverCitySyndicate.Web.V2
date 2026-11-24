@@ -1,0 +1,40 @@
+<section class="sm">
+    <div class="container">
+        <div class="row mb-1-9">
+            <div class="section-heading col-12">
+                <h2>Sample Song List</h2>
+                <p class="w-md-75 w-lg-55">A taste of what we play: crowd-pleasing covers and a few songs of our own.</p>
+            </div>
+        </div>
+
+        @if (errorMessage) {
+            <div class="alert alert-danger">{{ errorMessage }}</div>
+        } @else if (loading) {
+            <div class="d-flex justify-content-center py-5">
+                <div class="spinner-border text-primary" role="status">
+                    <span class="visually-hidden">Loading songs...</span>
+                </div>
+            </div>
+        } @else {
+            <div class="row g-4">
+                <div class="col-lg-8">
+                    <h3 class="h5">Covers</h3>
+                    <ul class="song-list covers">
+                        @for (song of covers; track song.id) {
+                            <li><strong>{{ song.title }}</strong><span>{{ song.artist }}</span></li>
+                        }
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h3 class="h5">Originals</h3>
+                    <ul class="song-list">
+                        @for (song of originals; track song.id) {
+                            <li><strong>{{ song.title }}</strong></li>
+                        }
+                    </ul>
+                </div>
+            </div>
+            <p class="mt-4 mb-0"><a routerLink="/songs">See the full song list</a></p>
+        }
+    </div>
+</section>

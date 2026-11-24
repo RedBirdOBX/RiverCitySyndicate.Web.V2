@@ -11,12 +11,12 @@
 }
 
 @if (!loading && !errorMessage) {
-    <section>
+    <section [class.sm]="compact">
         <div class="container">
             <div class="row mb-1-9 mb-lg-6">
                 <div class="section-heading col-12">
-                    <h2>Videos Gallery</h2>
-                    <p class="w-md-75 w-lg-55">A collection of the latest videos.</p>
+                    <h2>{{ heading }}</h2>
+                    <p class="w-md-75 w-lg-55">{{ intro }}</p>
                 </div>
                 <div class="col-12">
                     <div class="row g-4">

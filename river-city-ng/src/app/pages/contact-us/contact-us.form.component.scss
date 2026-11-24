@@ -1,0 +1,32 @@
+.contact-form {
+  .form-label {
+    font-weight: 500;
+    margin-bottom: .4rem;
+  }
+
+  .form-control,
+  .form-select {
+    border-radius: 2px;
+    padding: .75rem 1rem;
+
+    &:focus {
+      border-color: #f94d1c;
+      box-shadow: 0 0 0 .2rem rgba(249, 77, 28, .15);
+    }
+  }
+}
+
+.status-message {
+  border-radius: 2px;
+  padding: .75rem 1rem;
+
+  &.success {
+    background: #e6f4ea;
+    color: #1e6b34;
+  }
+
+  &.error {
+    background: #fdeaea;
+    color: #a12626;
+  }
+}

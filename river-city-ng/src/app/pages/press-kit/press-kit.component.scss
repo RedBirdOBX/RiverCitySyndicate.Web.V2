@@ -1,0 +1,48 @@
+// Offsets are the fixed site header (taller on small screens) plus this bar.
+$nav-height: 52px;
+
+:host {
+    display: block;
+    --header-height: 101px;
+
+    @media (max-width: 991.98px) {
+        --header-height: 107px;
+    }
+}
+
+.jump-nav {
+    position: sticky;
+    top: var(--header-height);
+    z-index: 5;
+    background: #282b2d;
+
+    ul {
+        display: flex;
+        align-items: center;
+        gap: 1.75rem;
+        min-height: $nav-height;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    a {
+        color: #fff;
+        font-weight: 600;
+
+        &:hover,
+        &:focus-visible {
+            color: #f94d1c;
+        }
+    }
+}
+
+.kit-section {
+    scroll-margin-top: calc(var(--header-height) + #{$nav-height});
+
+    & + & {
+        border-top: 1px solid #e9e9e9;
+    }
+}
