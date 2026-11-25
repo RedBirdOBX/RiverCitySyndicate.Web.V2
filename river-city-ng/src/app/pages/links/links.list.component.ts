@@ -30,6 +30,14 @@ export class LinksListComponent {
       icon: 'fa-brands fa-facebook',
       colorClass: 'link-facebook',
       buttonText: 'Follow Us'
+    },
+    {
+      name: 'Bombshell Talent Management',
+      description: 'Check out our profile on Bombshell Talent Management for more information about our services.',
+      url: 'https://www.bombshelltalentmgmt.com/talent/river-city-syndicate',
+      icon: 'fa-solid fa-bomb',
+      colorClass: 'link-bombshell',
+      buttonText: 'View Profile'
     }
   ];
 }

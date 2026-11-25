@@ -69,4 +69,11 @@
         .social-card-icon i { color: #3d95ce; }
         .social-btn { background-color: #3d95ce; }
     }
+
+    &.link-bombshell {
+        border-top: 5px solid #771a77;
+
+        .social-card-icon i { color: #771a77; }
+        .social-btn { background-color: #771a77; }
+    }
 }
